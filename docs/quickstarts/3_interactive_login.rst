@@ -92,6 +92,8 @@ To add support for OpenID Connect authentication to the MVC application, add the
                 options.RequireHttpsMetadata = false;
 
                 options.ClientId = "mvc";
+                options.ClientSecret = "secret";
+                options.ResponseType = "code id_token";
                 options.SaveTokens = true;
             });
     }
